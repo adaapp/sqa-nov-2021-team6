@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checks that DOM is consistent 1`] = `
+<div
+  className="App"
+>
+  <h1>
+    RGB to Hex Converter
+  </h1>
+  <div
+    className="hex-converter"
+  >
+    <div
+      className="color-input-container"
+    >
+      <div>
+        <form
+          className="form-input"
+        >
+          <label
+            className="color-input-label"
+          >
+            red
+          </label>
+          <input
+            className="color-input-field"
+            name="color "
+            type="text"
+          />
+          <div
+            className="color-square"
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": "red",
+                  "height": 25,
+                  "width": 25,
+                }
+              }
+            />
+          </div>
+        </form>
+      </div>
+      <div>
+        <form
+          className="form-input"
+        >
+          <label
+            className="color-input-label"
+          >
+            green
+          </label>
+          <input
+            className="color-input-field"
+            name="color "
+            type="text"
+          />
+          <div
+            className="color-square"
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": "green",
+                  "height": 25,
+                  "width": 25,
+                }
+              }
+            />
+          </div>
+        </form>
+      </div>
+      <div>
+        <form
+          className="form-input"
+        >
+          <label
+            className="color-input-label"
+          >
+            blue
+          </label>
+          <input
+            className="color-input-field"
+            name="color "
+            type="text"
+          />
+          <div
+            className="color-square"
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": "blue",
+                  "height": 25,
+                  "width": 25,
+                }
+              }
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div
+      className="buttons-container"
+    >
+      <button
+        className="button"
+      >
+        Convert
+      </button>
+      <button
+        className="button"
+      >
+        Reset
+      </button>
+    </div>
+    <div
+      className="hex-display-container"
+    >
+      <form
+        className="display-hex-form"
+      >
+        <label>
+          HEX color
+        </label>
+        <input
+          className="display-hex-input"
+        />
+      </form>
+    </div>
+  </div>
+</div>
+`;
