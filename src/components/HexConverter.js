@@ -1,22 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 import ColorInput from "./ColorInput";
 import DisplayHex from "./DisplayHex";
 
 const HexConverter = () => {
+  const [greenColorValue, setGreenColor] = useState("");
+  const [redColorValue, setRedColor] = useState("");
+  const [blueColorValue, setBlueColor] = useState("");
+  const [hexColor, setHexColor] = useState("000000");
+
+  const singleColorConverter = (colorValue) => {
+    var colorValueInteger = parseInt(colorValue);
+    var hex = colorValueInteger.toString(16);
+    return hex.length == 1 ? "0" + hex : hex;
+  };
+  
+  const rgbToHex = () => {
+    setHexColor(singleColorConverter(greenColorValue) + singleColorConverter(redColorValue) + singleColorConverter(blueColorValue));
+  };
+
+  const reset = () => {
+    Array.from(document.querySelectorAll("input")).forEach(
+      input => (input.value = ""));
+    setGreenColor("");
+    setRedColor("");
+    setBlueColor("");
+    setHexColor("000000");
+  };
+
   return (
     <div className="hex-converter">
       <div className="color-input-container">
-        <ColorInput color="red" />
-        <ColorInput color="green" />
-        <ColorInput color="blue" />
+        <ColorInput color="red" getColor={setGreenColor}/>
+        <ColorInput color="green" getColor={setRedColor}/>
+        <ColorInput color="blue" getColor={setBlueColor}/>
       </div>
       <div className="buttons-container">
-        <Button text="Convert" />
-        <Button text="Reset" />
+        <Button text="Convert" action={rgbToHex}/>
+        <Button text="Reset" action={reset}/>
       </div>
       <div className="hex-display-container">
-        <DisplayHex />
+        <DisplayHex hexValue={hexColor}/>
       </div>
     </div>
   );
