@@ -19,12 +19,15 @@ exports[`checks that DOM is consistent 1`] = `
         >
           <label
             className="color-input-label"
+            htmlFor="text"
           >
             red
           </label>
           <input
             className="color-input-field"
+            id="text"
             name="color "
+            onChange={[Function]}
             type="text"
           />
           <div
@@ -48,12 +51,15 @@ exports[`checks that DOM is consistent 1`] = `
         >
           <label
             className="color-input-label"
+            htmlFor="text"
           >
             green
           </label>
           <input
             className="color-input-field"
+            id="text"
             name="color "
+            onChange={[Function]}
             type="text"
           />
           <div
@@ -77,12 +83,15 @@ exports[`checks that DOM is consistent 1`] = `
         >
           <label
             className="color-input-label"
+            htmlFor="text"
           >
             blue
           </label>
           <input
             className="color-input-field"
+            id="text"
             name="color "
+            onChange={[Function]}
             type="text"
           />
           <div
@@ -106,11 +115,13 @@ exports[`checks that DOM is consistent 1`] = `
     >
       <button
         className="button"
+        onClick={[Function]}
       >
         Convert
       </button>
       <button
         className="button"
+        onClick={[Function]}
       >
         Reset
       </button>
@@ -118,16 +129,23 @@ exports[`checks that DOM is consistent 1`] = `
     <div
       className="hex-display-container"
     >
-      <form
-        className="display-hex-form"
-      >
+      <div>
         <label>
           HEX color
         </label>
-        <input
-          className="display-hex-input"
+        <p>
+          #000000
+        </p>
+        <div
+          style={
+            Object {
+              "backgroundColor": "#000000",
+              "height": 25,
+              "width": 25,
+            }
+          }
         />
-      </form>
+      </div>
     </div>
   </div>
 </div>

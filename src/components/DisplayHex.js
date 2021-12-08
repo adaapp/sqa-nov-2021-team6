@@ -8,9 +8,7 @@ const DisplayHex = (props) => {
     <div>
       <label>HEX color</label>
       <p>{props.hexValue}</p>
-      {/* <div className="color-square"> */}
       <ReactColorSquare height={25} width={25} color={props.hexValue} />
-      {/* </div> */}
     </div>
   );
 };

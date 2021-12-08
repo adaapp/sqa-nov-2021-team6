@@ -7,9 +7,10 @@ const ColorInput = ({ color, getColor }) => {
   return (
     <div>
       <form className="form-input">
-        <label className="color-input-label">{color}</label>
+        <label htmlFor="text" className="color-input-label">{color}</label>
         <input 
           name="color " 
+          id="text"
           className="color-input-field" 
           type="text"
           onChange={(e) => getColor(e.target.value)}
