@@ -7,7 +7,7 @@ const HexConverter = () => {
   const [greenColorValue, setGreenColor] = useState("");
   const [redColorValue, setRedColor] = useState("");
   const [blueColorValue, setBlueColor] = useState("");
-  const [hexColor, setHexColor] = useState("000000");
+  const [hexColor, setHexColor] = useState("#000000");
 
   const singleColorConverter = (colorValue) => {
     var colorValueInteger = parseInt(colorValue);
@@ -16,7 +16,7 @@ const HexConverter = () => {
   };
   
   const rgbToHex = () => {
-    setHexColor(singleColorConverter(greenColorValue) + singleColorConverter(redColorValue) + singleColorConverter(blueColorValue));
+    setHexColor("#" + singleColorConverter(greenColorValue) + singleColorConverter(redColorValue) + singleColorConverter(blueColorValue));
   };
 
   const reset = () => {
@@ -25,7 +25,7 @@ const HexConverter = () => {
     setGreenColor("");
     setRedColor("");
     setBlueColor("");
-    setHexColor("000000");
+    setHexColor("#000000");
   };
 
   return (

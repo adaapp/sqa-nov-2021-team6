@@ -1,15 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
+import ReactColorSquare from "react-color-square";
 
 const DisplayHex = (props) => {
 
   return (
-    // <form className="display-hex-form">
-    //   <input className="display-hex-input"></input>
-    // </form>
     <div>
       <label>HEX color</label>
-      <p>#{props.hexValue}</p>
+      <p>{props.hexValue}</p>
+      {/* <div className="color-square"> */}
+      <ReactColorSquare height={25} width={25} color={props.hexValue} />
+      {/* </div> */}
     </div>
   );
 };
