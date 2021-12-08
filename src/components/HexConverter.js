@@ -2,18 +2,13 @@ import React, { useState } from "react";
 import Button from "./Button";
 import ColorInput from "./ColorInput";
 import DisplayHex from "./DisplayHex";
+import { singleColorConverter } from "./utils.js";
 
 const HexConverter = () => {
   const [greenColorValue, setGreenColor] = useState("");
   const [redColorValue, setRedColor] = useState("");
   const [blueColorValue, setBlueColor] = useState("");
   const [hexColor, setHexColor] = useState("#000000");
-
-  const singleColorConverter = (colorValue) => {
-    var colorValueInteger = parseInt(colorValue);
-    var hex = colorValueInteger.toString(16);
-    return hex.length == 1 ? "0" + hex : hex;
-  };
   
   const rgbToHex = () => {
     setHexColor("#" + singleColorConverter(greenColorValue) + singleColorConverter(redColorValue) + singleColorConverter(blueColorValue));
