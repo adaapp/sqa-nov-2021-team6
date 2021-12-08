@@ -15,8 +15,6 @@ const HexConverter = () => {
   };
 
   const reset = () => {
-    Array.from(document.querySelectorAll("input")).forEach(
-      input => (input.value = ""));
     setGreenColor("");
     setRedColor("");
     setBlueColor("");
