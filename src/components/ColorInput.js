@@ -2,7 +2,7 @@ import React from "react";
 import ReactColorSquare from "react-color-square";
 import PropTypes from "prop-types";
 
-const ColorInput = ({ color, setColor }) => {
+const ColorInput = ({ color, setColor, rgbValue }) => {
   
   return (
     <div>
@@ -13,6 +13,7 @@ const ColorInput = ({ color, setColor }) => {
           id="text"
           className="color-input-field" 
           type="text"
+          value={rgbValue}
           onChange={(e) => setColor(e.target.value)}
         ></input>
         <div className="color-square">
@@ -25,7 +26,8 @@ const ColorInput = ({ color, setColor }) => {
 
 ColorInput.propTypes = {
   color: PropTypes.string,
-  setColor: PropTypes.func
+  setColor: PropTypes.func,
+  rgbValue: PropTypes.string
 };
 
 export default ColorInput;

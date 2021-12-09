@@ -29,6 +29,7 @@ exports[`checks that DOM is consistent 1`] = `
             name="color "
             onChange={[Function]}
             type="text"
+            value=""
           />
           <div
             className="color-square"
@@ -61,6 +62,7 @@ exports[`checks that DOM is consistent 1`] = `
             name="color "
             onChange={[Function]}
             type="text"
+            value=""
           />
           <div
             className="color-square"
@@ -93,6 +95,7 @@ exports[`checks that DOM is consistent 1`] = `
             name="color "
             onChange={[Function]}
             type="text"
+            value=""
           />
           <div
             className="color-square"

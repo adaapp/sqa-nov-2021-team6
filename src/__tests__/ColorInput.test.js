@@ -11,3 +11,9 @@ test("getColor called when user input changes", () => {
   
     expect(setColor).toHaveBeenCalled();
   });
+
+  test("color value correctly displayed in the input field", () => {
+    const { getByRole } = render(<ColorInput color={"green"} rgbValue={"255"}/>);
+  
+    expect(getByRole("textbox").value).toBe("255");
+  });
