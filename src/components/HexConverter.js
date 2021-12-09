@@ -5,9 +5,9 @@ import DisplayHex from "./DisplayHex";
 import { singleColorConverter } from "./utils.js";
 
 const HexConverter = () => {
-  const [greenColorValue, setGreenColor] = useState("");
-  const [redColorValue, setRedColor] = useState("");
-  const [blueColorValue, setBlueColor] = useState("");
+  const [greenColorValue, setGreenColorValue] = useState("");
+  const [redColorValue, setRedColorValue] = useState("");
+  const [blueColorValue, setBlueColorValue] = useState("");
   const [hexColor, setHexColor] = useState("#000000");
   
   const rgbToHex = () => {
@@ -15,18 +15,18 @@ const HexConverter = () => {
   };
 
   const reset = () => {
-    setGreenColor("");
-    setRedColor("");
-    setBlueColor("");
+    setGreenColorValue("");
+    setRedColorValue("");
+    setBlueColorValue("");
     setHexColor("#000000");
   };
 
   return (
     <div className="hex-converter">
       <div className="color-input-container">
-        <ColorInput color="red" getColor={setGreenColor}/>
-        <ColorInput color="green" getColor={setRedColor}/>
-        <ColorInput color="blue" getColor={setBlueColor}/>
+        <ColorInput color="red" setColor={setGreenColorValue}/>
+        <ColorInput color="green" setColor={setRedColorValue}/>
+        <ColorInput color="blue" setColor={setBlueColorValue}/>
       </div>
       <div className="buttons-container">
         <Button text="Convert" action={rgbToHex}/>

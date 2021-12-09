@@ -1,11 +1,10 @@
 import { render, fireEvent } from "@testing-library/react";
 import Button from "../components/Button";
 
-test("correct function called when button clicked", () => {
+test("function is called when the button is clicked", () => {
     const onSubmit = jest.fn()
-    const buttonName = "Submit"
-    const { getByText } = render(<Button text={"Submit"} action={onSubmit}/>);
-    fireEvent.click(getByText("Submit"))
+    const { getByRole } = render(<Button action={onSubmit}/>);
+    fireEvent.click(getByRole("button"))
   
     expect(onSubmit).toHaveBeenCalled();
   });
