@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "./Button";
 import ColorInput from "./ColorInput";
 import DisplayHex from "./DisplayHex";
-import { singleColorConverter } from "./utils.js";
+import { singleColorConverter } from "../javascript/utils.js";
 
 const HexConverter = () => {
   const [redColorValue, setRedColorValue] = useState("");
