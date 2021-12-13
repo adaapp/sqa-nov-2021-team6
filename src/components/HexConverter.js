@@ -20,6 +20,9 @@ const HexConverter = () => {
   };
 
   const reset = () => {
+    Array.from(document.querySelectorAll("input")).forEach(
+      input => (input.value = "")
+    );
     setRedColorValue("");
     setGreenColorValue("");
     setBlueColorValue("");
