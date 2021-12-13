@@ -1,11 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Button = ({ text, action }) => {
-  return <button className="button" onClick={action}>{text}</button>;
+const style = { primary: "is-info", secondary: "is-light" };
+
+const Button = ({ type, text, action }) => {
+  const buttonStyle = "button " + style[type];
+  return (
+    <p className="control">
+      <button className={buttonStyle} onClick={action}>
+        {text}
+      </button>
+    </p>
+  );
 };
 
 Button.propTypes = {
+  type: PropTypes.string,
   text: PropTypes.string,
   action: PropTypes.func
 };
