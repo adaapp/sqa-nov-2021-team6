@@ -40,9 +40,11 @@ describe("the user interface should work correctly", () => {
   it("should correctly convert the inputs to a HEX number when the convert button is clicked", async () => {
     //Open browser and open app in new page
     browser = await puppeteer.launch({
-      args: ["--no-sandbox"],
-      executablePath: process.env.PUPPETEER_EXEC_PATH,
-      headless: false
+      headless: true,
+      args: [
+        "--no-sandbox",
+        "disable-setuid-sandbox"],
+      executablePath: process.env.PUPPETEER_EXEC_PATH
     });
     page = await browser.newPage();
     await page.goto(app);
@@ -71,9 +73,11 @@ describe("the user interface should work correctly", () => {
   it("should clear all values from the input fields as well as the HEX color display, when the reset button is clicked", async () => {
     //Open browser and open app in new page
     browser = await puppeteer.launch({
-      args: ["--no-sandbox"],
-      executablePath: process.env.PUPPETEER_EXEC_PATH,
-      headless: false
+      headless: true,
+      args: [
+        "--no-sandbox",
+        "disable-setuid-sandbox"],
+      executablePath: process.env.PUPPETEER_EXEC_PATH
     });
     page = await browser.newPage();
     await page.goto(app);
@@ -132,9 +136,11 @@ describe("the user interface should work correctly", () => {
 
   it("should not convert to a HEX number if one of the color input fields is empty", async () => {
     browser = await puppeteer.launch({
-      args: ["--no-sandbox"],
-      executablePath: process.env.PUPPETEER_EXEC_PATH,
-      headless: false
+      headless: true,
+      args: [
+        "--no-sandbox",
+        "disable-setuid-sandbox"],
+      executablePath: process.env.PUPPETEER_EXEC_PATH
     });
     page = await browser.newPage();
     await page.goto(app);
@@ -159,9 +165,11 @@ describe("the user interface should work correctly", () => {
   it("should not convert to a HEX number if a number outside the expected range is entered into one of the color input fields", async () => {
     //Open browser and open app in new page
     browser = await puppeteer.launch({
-      args: ["--no-sandbox"],
-      executablePath: process.env.PUPPETEER_EXEC_PATH,
-      headless: false
+      headless: true,
+      args: [
+        "--no-sandbox",
+        "disable-setuid-sandbox"],
+      executablePath: process.env.PUPPETEER_EXEC_PATH
     });
     page = await browser.newPage();
     await page.goto(app);
