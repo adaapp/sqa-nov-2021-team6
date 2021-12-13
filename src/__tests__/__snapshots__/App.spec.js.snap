@@ -1,0 +1,258 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App.js should display the DOM correctly 1`] = `
+<div
+  className="container"
+>
+  <section
+    className="section mt-6"
+  >
+    <h1
+      className="title"
+    >
+      RGB to Hex Converter
+    </h1>
+    <h2
+      className="subtitle"
+    >
+      A simple tool to convert 
+      <strong>
+        RBG
+      </strong>
+       colours to
+       
+      <strong>
+        Hex
+      </strong>
+       encoded colours.
+    </h2>
+  </section>
+  <section
+    className="section"
+  >
+    <div
+      className="columns"
+    >
+      <div
+        className="column card p-5 is-third"
+      >
+        <h2
+          className="title"
+        >
+          RBG Colour
+        </h2>
+        <div
+          className="level-item is-justify-content-flex-start"
+        >
+          <div>
+            <form
+              className="field py-4"
+            >
+              <div
+                className="control"
+              >
+                <label
+                  className="label"
+                  htmlFor="text"
+                >
+                  Red
+                </label>
+                <div
+                  className="level"
+                >
+                  <input
+                    className="input level-item"
+                    id="text"
+                    name="color"
+                    onChange={[Function]}
+                    placeholder="e.g. 123"
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    className="level-item px-2"
+                  >
+                    <div
+                      style={
+                        Object {
+                          "backgroundColor": "Red",
+                          "height": 35,
+                          "width": 35,
+                        }
+                      }
+                    />
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          className="level-item is-justify-content-flex-start"
+        >
+          <div>
+            <form
+              className="field py-4"
+            >
+              <div
+                className="control"
+              >
+                <label
+                  className="label"
+                  htmlFor="text"
+                >
+                  Green
+                </label>
+                <div
+                  className="level"
+                >
+                  <input
+                    className="input level-item"
+                    id="text"
+                    name="color"
+                    onChange={[Function]}
+                    placeholder="e.g. 123"
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    className="level-item px-2"
+                  >
+                    <div
+                      style={
+                        Object {
+                          "backgroundColor": "Green",
+                          "height": 35,
+                          "width": 35,
+                        }
+                      }
+                    />
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          className="level-item is-justify-content-flex-start"
+        >
+          <div>
+            <form
+              className="field py-4"
+            >
+              <div
+                className="control"
+              >
+                <label
+                  className="label"
+                  htmlFor="text"
+                >
+                  Blue
+                </label>
+                <div
+                  className="level"
+                >
+                  <input
+                    className="input level-item"
+                    id="text"
+                    name="color"
+                    onChange={[Function]}
+                    placeholder="e.g. 123"
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    className="level-item px-2"
+                  >
+                    <div
+                      style={
+                        Object {
+                          "backgroundColor": "Blue",
+                          "height": 35,
+                          "width": 35,
+                        }
+                      }
+                    />
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div
+        className="field is-grouped is-grouped-centered vertical-center mx-6"
+      >
+        <div
+          className="px-4"
+        >
+          <p
+            className="control"
+          >
+            <button
+              className="button is-info"
+              onClick={[Function]}
+            >
+              Convert
+            </button>
+          </p>
+        </div>
+        <div
+          className="px-4"
+        >
+          <p
+            className="control"
+          >
+            <button
+              className="button is-light"
+              onClick={[Function]}
+            >
+              Reset
+            </button>
+          </p>
+        </div>
+      </div>
+      <div
+        className="column card p-5 is-third"
+      >
+        <h2
+          className="title"
+        >
+          HEX Colour
+        </h2>
+        <div
+          className="level-item is-justify-content-flex-start"
+        >
+          <div
+            className="content"
+          >
+            <div
+              className="control level"
+            >
+              <input
+                className="input level-item"
+                readOnly={true}
+                type="text"
+                value="#000000"
+              />
+              <span
+                className="level-item px-2"
+              >
+                <div
+                  style={
+                    Object {
+                      "backgroundColor": "#000000",
+                      "height": 35,
+                      "width": 35,
+                    }
+                  }
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

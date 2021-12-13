@@ -3,21 +3,27 @@ import ReactColorSquare from "react-color-square";
 import PropTypes from "prop-types";
 
 const ColorInput = ({ color, setColor, rgbValue }) => {
-  
   return (
     <div>
-      <form className="form-input">
-        <label htmlFor="text" className="color-input-label">{color}</label>
-        <input 
-          name="color " 
-          id="text"
-          className="color-input-field" 
-          type="text"
-          value={rgbValue}
-          onChange={(e) => setColor(e.target.value)}
-        ></input>
-        <div className="color-square">
-          <ReactColorSquare height={25} width={25} color={color} />
+      <form className="field py-4">
+        <div className="control">
+          <label htmlFor="text" className="label">
+            {color}
+          </label>
+          <div className="level">
+            <input
+              name="color"
+              id="text"
+              className="input level-item"
+              placeholder="e.g. 123"
+              type="text"
+              value={rgbValue}
+              onChange={(e) => setColor(e.target.value)}
+            />
+            <span className="level-item px-2">
+              <ReactColorSquare height={35} width={35} color={color} />
+            </span>
+          </div>
         </div>
       </form>
     </div>
