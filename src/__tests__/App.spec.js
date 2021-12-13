@@ -4,11 +4,6 @@ import { render } from "@testing-library/react";
 import App from "../components/app/App";
 import puppeteer from "puppeteer";
 
-const app = "http://localhost:3000/";
-let browser; 
-let page;
-let hexNumber;
-
 describe("App.js", () => {
   it("should display the DOM correctly", () => {
     const tree = renderer.create(<App />).toJSON();
@@ -34,6 +29,14 @@ describe("App.js", () => {
     //Check for HEX color display
     expect(getByText("HEX Colour")).toBeInTheDocument();
   });
+})
+
+describe("the user interface should work correctly", () => {
+
+  const app = "http://localhost:3000/";
+  let browser; 
+  let page;
+  let hexNumber;
 
   it("should correctly convert the inputs to a HEX number when the convert button is clicked", async () => {
     //Open browser and open app in new page
