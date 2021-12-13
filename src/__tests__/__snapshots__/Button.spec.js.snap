@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button.js should display the DOM correctly 1`] = `
+<p
+  className="control"
+>
+  <button
+    className="button is-light"
+    onClick={[MockFunction]}
+  >
+    Reset
+  </button>
+</p>
+`;
