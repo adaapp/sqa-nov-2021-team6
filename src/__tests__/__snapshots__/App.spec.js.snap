@@ -63,7 +63,7 @@ exports[`App.js should display the DOM correctly 1`] = `
                   <input
                     className="input level-item"
                     id="text"
-                    name="color"
+                    name="Red"
                     onChange={[Function]}
                     placeholder="e.g. 123"
                     type="text"
@@ -109,7 +109,7 @@ exports[`App.js should display the DOM correctly 1`] = `
                   <input
                     className="input level-item"
                     id="text"
-                    name="color"
+                    name="Green"
                     onChange={[Function]}
                     placeholder="e.g. 123"
                     type="text"
@@ -155,7 +155,7 @@ exports[`App.js should display the DOM correctly 1`] = `
                   <input
                     className="input level-item"
                     id="text"
-                    name="color"
+                    name="Blue"
                     onChange={[Function]}
                     placeholder="e.g. 123"
                     type="text"
@@ -191,6 +191,7 @@ exports[`App.js should display the DOM correctly 1`] = `
           >
             <button
               className="button is-info"
+              name="Convert"
               onClick={[Function]}
             >
               Convert
@@ -205,6 +206,7 @@ exports[`App.js should display the DOM correctly 1`] = `
           >
             <button
               className="button is-light"
+              name="Reset"
               onClick={[Function]}
             >
               Reset
@@ -231,6 +233,7 @@ exports[`App.js should display the DOM correctly 1`] = `
             >
               <input
                 className="input level-item"
+                name="display-color"
                 readOnly={true}
                 type="text"
                 value="#000000"

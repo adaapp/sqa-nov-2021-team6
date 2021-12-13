@@ -7,6 +7,7 @@ const DisplayHex = ({ hexValue }) => {
     <div className="content">
       <div className="control level">
         <input
+          name="display-color"
           className="input level-item"
           type="text"
           value={hexValue}
