@@ -7,11 +7,11 @@ exports[`HexConverter HexConverter view should display the DOM correctly 1`] = `
   <div
     className="column card p-5 is-third"
   >
-    <h2
-      className="title"
+    <h3
+      className="title is-3"
     >
-      RBG Colour
-    </h2>
+      RGB Colour
+    </h3>
     <div
       className="level-item is-justify-content-flex-start"
     >
@@ -25,6 +25,11 @@ exports[`HexConverter HexConverter view should display the DOM correctly 1`] = `
             <label
               className="label"
               htmlFor="text"
+              style={
+                Object {
+                  "color": "Red",
+                }
+              }
             >
               Red
             </label>
@@ -77,6 +82,11 @@ exports[`HexConverter HexConverter view should display the DOM correctly 1`] = `
             <label
               className="label"
               htmlFor="text"
+              style={
+                Object {
+                  "color": "Green",
+                }
+              }
             >
               Green
             </label>
@@ -129,6 +139,11 @@ exports[`HexConverter HexConverter view should display the DOM correctly 1`] = `
             <label
               className="label"
               htmlFor="text"
+              style={
+                Object {
+                  "color": "Blue",
+                }
+              }
             >
               Blue
             </label>
@@ -207,7 +222,7 @@ exports[`HexConverter HexConverter view should display the DOM correctly 1`] = `
     className="column card p-5 is-third"
   >
     <h2
-      className="title"
+      className="title is-3"
     >
       HEX Colour
     </h2>

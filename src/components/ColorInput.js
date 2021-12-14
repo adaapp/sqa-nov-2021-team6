@@ -22,7 +22,7 @@ const ColorInput = ({ color, setColor }) => {
     <div>
       <form className="field py-4">
         <div className="control">
-          <label htmlFor="text" className="label">
+          <label style={{color: color}} htmlFor="text" className="label">
             {color}
           </label>
           <div className="level">

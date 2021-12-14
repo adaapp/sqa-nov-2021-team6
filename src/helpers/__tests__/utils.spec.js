@@ -10,8 +10,8 @@ describe("Helpers - Utils.js", () => {
     ["255", "ff"]
   ])(
     "should return the correct value from a valid input",
-    (rbgColour, hexColour) => {
-      expect(singleColorConverter(rbgColour)).toBe(hexColour);
+    (rgbColour, hexColour) => {
+      expect(singleColorConverter(rgbColour)).toBe(hexColour);
     }
   );
 
