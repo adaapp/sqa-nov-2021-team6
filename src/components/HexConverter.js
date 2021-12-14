@@ -29,7 +29,7 @@ const HexConverter = () => {
   return (
     <div className="columns">
       <div className="column card p-5 is-third">
-        <h3 className="title is-3">RBG Colour</h3>
+        <h3 className="title is-3">RGB Colour</h3>
         <div className="level-item is-justify-content-flex-start">
           <ColorInput
             color="Red"
