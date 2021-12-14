@@ -57,11 +57,7 @@ exports[`HexConverter HexConverter view should display the DOM correctly 1`] = `
         </form>
         <div>
           <p
-            style={
-              Object {
-                "color": "red",
-              }
-            }
+            className="has-text-danger"
           >
             
           </p>
@@ -113,11 +109,7 @@ exports[`HexConverter HexConverter view should display the DOM correctly 1`] = `
         </form>
         <div>
           <p
-            style={
-              Object {
-                "color": "red",
-              }
-            }
+            className="has-text-danger"
           >
             
           </p>
@@ -169,11 +161,7 @@ exports[`HexConverter HexConverter view should display the DOM correctly 1`] = `
         </form>
         <div>
           <p
-            style={
-              Object {
-                "color": "red",
-              }
-            }
+            className="has-text-danger"
           >
             
           </p>

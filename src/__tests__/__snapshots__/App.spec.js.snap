@@ -86,11 +86,7 @@ exports[`App.js should display the DOM correctly 1`] = `
             </form>
             <div>
               <p
-                style={
-                  Object {
-                    "color": "red",
-                  }
-                }
+                className="has-text-danger"
               >
                 
               </p>
@@ -142,11 +138,7 @@ exports[`App.js should display the DOM correctly 1`] = `
             </form>
             <div>
               <p
-                style={
-                  Object {
-                    "color": "red",
-                  }
-                }
+                className="has-text-danger"
               >
                 
               </p>
@@ -198,11 +190,7 @@ exports[`App.js should display the DOM correctly 1`] = `
             </form>
             <div>
               <p
-                style={
-                  Object {
-                    "color": "red",
-                  }
-                }
+                className="has-text-danger"
               >
                 
               </p>

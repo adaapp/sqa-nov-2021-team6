@@ -11,6 +11,7 @@ const ColorInput = ({ color, setColor }) => {
     const parsedInputValue = (parseInt(userInputValue, 10));
     if (parsedInputValue < 0 || parsedInputValue > 255 || isNaN(parsedInputValue)) {
       setErrorMessage("Please insert a number between 0 and 255");
+      setColor(userInputValue);
     } else {
       setColor(userInputValue);
       setErrorMessage("");

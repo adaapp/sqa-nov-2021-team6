@@ -19,8 +19,9 @@ describe("ColourInput.js", () => {
   });
 
   it("displays error message when user enters invalid input", () => {
+    const setColor = jest.fn();
     const { getByText, getByLabelText } = render(
-      <ColorInput color={"green"} />
+      <ColorInput color={"green"} setColor={setColor}/>
     );
 
     fireEvent.change(getByLabelText("green"), {
