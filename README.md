@@ -1,4 +1,8 @@
-# SQA Team 6
+# SQA Team 6 ![](https://camo.githubusercontent.com/0a47442b4a3342164618c1838f886fbbf2db735b585a8ba985b320318f0132bc/68747470733a2f2f696d672e736869656c64732e696f2f636f6465636f762f632f6769746875622f6477796c2f686170692d617574682d6a7774322e7376673f6d61784167653d32353932303030) ![](https://camo.githubusercontent.com/4e084bac046962268fcf7a8aaf3d4ac422d3327564f9685c9d1b57aa56b142e9/68747470733a2f2f7472617669732d63692e6f72672f6477796c2f657374612e7376673f6272616e63683d6d6173746572) 
+
+See the latest build here: 
+
+https://sharp-einstein-a3b13b.netlify.app/
 
 ## Project description
 
@@ -110,8 +114,46 @@ _Eslint/Prettier_ - Code formatter
 - All quality objectives have been met.
 
 ## CI/CD Pipeline setup
+Our CI/CD Pipeline is made up of multiple layers of validation through Github Actions, which allows us to run these checks every time a Pull Request (PR) is created, pushed to, or merged. Our pipeline uses multiple checks, first setting up a testing environment in Ubuntu and installs all dependencies in this isolated environment. 
 
-CI/CD pipeline was set up with GitHub Actions and is triggered every time a new PR is raised or new changes are pushed to the existing remote branch. It runs a number of checks, including code coverage (we set a target of \&gt;80% of code to be executed). Netlify build deploys branches previews.
+### Unit Testing/Component Testing
+Our pipeline builds our application, to ensure our application has no build errors, then runs our unit tests. Our unit tests cover our high level application, and every individual component. The current code coverage is 100%, which although is not completely necessary in larger applications, for one of this size the benefit outweighs the cost.
+
+![Screenshot at Dec 14 22-47-44](https://user-images.githubusercontent.com/31472522/146092616-1e970673-4194-48b6-88ab-13eb9d7e6122.png)
+![Screenshot at Dec 14 22-48-14](https://user-images.githubusercontent.com/31472522/146092626-9616783d-1ed7-4539-9759-428b208c6e60.png)
+
+### Code Coverage
+Once the check is completed, our pipeline runs a coverage check on all the necessary files in the repo. We have a check in place to make sure that the pipeline fails if code coverage on new changes is below a specified level (80%). 
+We use a bot called Barecheck, which leaves a comment on each PR with the current code coverage and the difference in code coverage after merge.
+
+![Screenshot at Dec 14 22-48-32](https://user-images.githubusercontent.com/31472522/146092660-369fee85-5cdb-4a50-a30a-e111b48510ec.png)
+
+### Manual QA
+We also use Netlify to deploy our repo to a manual QA environment. Each PR is also deployed to a test environment which allows manual testing before merging. This allows us to ensure that no unexpected behaviour occurs after merging.
+
+![Screenshot at Dec 14 22-48-43](https://user-images.githubusercontent.com/31472522/146092719-16c33c8d-326e-450a-99e7-7df5cd8d15e5.png)
+
+### E2E / Smoke Tests
+Furthermore, we use an end-to-end testing framework called Puppeteer which enables us to test the overall output of our program, irrespective of implementation. This runs locally in the browser but also in our Pipeline, headless, which means we can simulate a user’s input very closely and ensure our website behaves accordingly. 
+
+![Screenshot at Dec 14 22-49-18](https://user-images.githubusercontent.com/31472522/146092757-4a4839c4-bc7b-40a9-832d-9d0c6ab4d0c0.png)
+
+### Branch protection rules
+
+For open PRs to be merged, they require that all conversations be resolved by the author of the original comment. They also require two approvals by members of the repo with write access.
+
+![Screenshot at Dec 14 22-50-00](https://user-images.githubusercontent.com/31472522/146092789-da649194-4888-429a-a8fe-73cd75ed74c4.png)
+
+Additionally, commits cannot be made directly to the master branch without opening and completing the relevant checks on a pull request. 
+
+![Screenshot at Dec 14 22-50-33](https://user-images.githubusercontent.com/31472522/146092833-8df3f851-f143-4288-8d60-ac403b821881.png)
+
+### Post Merge QA
+Once a PR is fully merged then Netify deploys the final build to the production environment. Once it is here a member of the team does a final check to see that the changes have been made correctly. If there are any issues, a defect ticket is raised to address the issue.
+
+Once the merge is complete, the final build is available here: https://sharp-einstein-a3b13b.netlify.app/
+
+![Screenshot at Dec 14 22-51-18](https://user-images.githubusercontent.com/31472522/146092883-ae2aa849-cf21-4e59-bceb-0fa0779e1d65.png)
 
 ## Test Driven Development
 
