@@ -123,7 +123,7 @@ To ensure better code quality and more thorough testing, we used test driven dev
 
 To make sure that our &#39;RGB to HEX converter&#39; works as expected and can be safely deployed to the end users, we planned a thorough testing of the application, with a combination of automated and manual tests. This test plan explains how the quality of the application will be verified and measured before the final release.
 
-1. **Quality objectives**
+2. **Quality objectives**
 
 | **No.** | **Requirement** | **How to measure** | **Processes/tools to check the requirement** |
 | --- | --- | --- | --- |
@@ -132,11 +132,11 @@ To make sure that our &#39;RGB to HEX converter&#39; works as expected and can b
 | NFR3 | Intuitive UI | Users should be able to use the app on the first launch, without any help. | UAT sessions/user testing. |
 | NFR4 | User satisfaction | > 80% of users are happy with their experience | UAT sessions/user testing. |
 
-1. **Test strategy**
+3. **Test strategy**
 
 Software quality will be checked with a combination of automated and manual tests. The first layer will be performed by automated tests running on a CI/CD pipeline, every time a change is made and merged into the codebase. This will help us to make sure that the code quality would not be affected by changes. Manual tests will also help to identify any bugs in the user experience.
 
-**3.1 Automated tests**
+***3.1 Automated tests***
 
 - Static analysis using ESLint and Prettier.
 - UI tests.
@@ -144,17 +144,17 @@ Software quality will be checked with a combination of automated and manual test
 - Unit tests.
 - Automated UI testing, through the Puppeteer framework.
 
-**3.2 Manual tests**
+***3.2 Manual tests***
 
 - QA testing of every new feature after development is completed.
 - UAT session with all the team members with e2e manual testing of the app.
 - UAT session with a wider group of users, to ensure NFR3 and NFR4 are met.
 
-1. **Test cases**
+4. **Test cases**
 
 [https://docs.google.com/spreadsheets/d/1g0-AUQSzFQfNu7KUv7PuPhwcrhCI5lJRZgMo-V-E8Ug/edit#gid=0](https://docs.google.com/spreadsheets/d/1g0-AUQSzFQfNu7KUv7PuPhwcrhCI5lJRZgMo-V-E8Ug/edit#gid=0)
 
-1. **Testing tools and frameworks**
+5. **Testing tools and frameworks**
 
 | **Test type** | **Testing tools/framework** |
 | --- | --- |
