@@ -220,14 +220,24 @@ This standard is concerned with initiating, planning, controlling and executing 
 
 - The SQA process will be continually improved, based on objective measures and actual project results.
 
-# Accessibility audit
+## Accessibility Considerations
 
-The app has not yet had a proper accessibility audit, but some initial accessibility checks were performed after the app core functionality and design was developed. For now we only tested the app with a screen reader (ChromeVox extension on Google Chrome) and discovered a few issues that would need to be fixed on later iterations:
+![Screenshot at Dec 14 23-21-44](https://user-images.githubusercontent.com/31472522/146095032-31ad171e-3c4d-4a7d-8173-8a3249a3e2d7.png)
 
-- Form labels and descriptions should be clear, for now, with the screen reader only, it is not easy to understand there are text boxes on the screen for RGB colours
+We used Lighthouse for our accessibility audits - this led us to make some changes to improve our rating, specifically to do with sequential headings. 
+
+![Screenshot at Dec 14 23-17-23](https://user-images.githubusercontent.com/31472522/146095012-cb9263c9-fd59-4e45-98f7-44831df7b9e0.png)
+
+We also tested the app with a screen reader (ChromeVox extension on Google Chrome) to ensure our application was accessible to the blind and tested the tabbing journey of the page to ensure that keyboard users would be able to use the page without issue.
+
+After the Screenreader test we discovered a few issues that would need to be fixed in a later update. For now, we have an open issue meant to address these updates: https://github.com/adaapp/sqa-nov-2021-team6/issues/47
+
+- Form labels and descriptions should be clear: for now with the screen reader only, it is not easy to understand there are text boxes on the screen for RGB colours
 - Unclear that &#39;Convert&#39; and &#39;Reset&#39; are buttons that can be clicked, screen reader just reads out the labels, we should mention the elements roles for this section
 - To make sure that screen reader reads out the elements on the page in a logical order, we should group all the elements and sections of the page correctly
 - Add proper error handling of the form input to pass error identification accessibility standard [https://www.wuhcag.com/error-identification/](https://www.wuhcag.com/error-identification/)
+
+![Screenshot at Dec 14 23-22-33](https://user-images.githubusercontent.com/31472522/146095107-d30b8905-292d-4374-9319-258a2e7c080d.png)
 
 # React Guide
 
