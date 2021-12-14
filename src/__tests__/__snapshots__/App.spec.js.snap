@@ -67,7 +67,6 @@ exports[`App.js should display the DOM correctly 1`] = `
                     onChange={[Function]}
                     placeholder="e.g. 123"
                     type="text"
-                    value=""
                   />
                   <span
                     className="level-item px-2"
@@ -85,6 +84,13 @@ exports[`App.js should display the DOM correctly 1`] = `
                 </div>
               </div>
             </form>
+            <div>
+              <p
+                className="has-text-danger"
+              >
+                
+              </p>
+            </div>
           </div>
         </div>
         <div
@@ -113,7 +119,6 @@ exports[`App.js should display the DOM correctly 1`] = `
                     onChange={[Function]}
                     placeholder="e.g. 123"
                     type="text"
-                    value=""
                   />
                   <span
                     className="level-item px-2"
@@ -131,6 +136,13 @@ exports[`App.js should display the DOM correctly 1`] = `
                 </div>
               </div>
             </form>
+            <div>
+              <p
+                className="has-text-danger"
+              >
+                
+              </p>
+            </div>
           </div>
         </div>
         <div
@@ -159,7 +171,6 @@ exports[`App.js should display the DOM correctly 1`] = `
                     onChange={[Function]}
                     placeholder="e.g. 123"
                     type="text"
-                    value=""
                   />
                   <span
                     className="level-item px-2"
@@ -177,6 +188,13 @@ exports[`App.js should display the DOM correctly 1`] = `
                 </div>
               </div>
             </form>
+            <div>
+              <p
+                className="has-text-danger"
+              >
+                
+              </p>
+            </div>
           </div>
         </div>
       </div>
