@@ -31,7 +31,7 @@ describe("App.js", () => {
   });
 });
 
-describe("the user interface should work correctly", () => {
+describe("E2E Tests", () => {
   const app = "http://localhost:3000/";
   let browser;
   let page;

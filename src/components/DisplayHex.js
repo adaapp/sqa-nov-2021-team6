@@ -8,6 +8,7 @@ const DisplayHex = ({ hexValue }) => {
       <div className="control level">
         <input
           name="display-color"
+          data-testid="display-hex"
           className="input level-item"
           type="text"
           value={hexValue}

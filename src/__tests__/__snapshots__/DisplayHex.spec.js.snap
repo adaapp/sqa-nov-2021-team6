@@ -9,6 +9,7 @@ exports[`DisplayHex.js should display the DOM correctly 1`] = `
   >
     <input
       className="input level-item"
+      data-testid="display-hex"
       name="display-color"
       readOnly={true}
       type="text"
