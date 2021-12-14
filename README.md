@@ -53,6 +53,10 @@ _Puppeteer_ - Automated UI testing library
 
 _Eslint/Prettier_ - Code formatter
 
+## Project Management 
+
+Find our Github Project board here: https://github.com/adaapp/sqa-nov-2021-team6/projects/1
+
 ## Coding Best Practises
 
 1. Adhere to the React style guide: [https://react-styleguidist.js.org/](https://react-styleguidist.js.org/)
