@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "coverage": "npm run test:e2e -- --coverage .",
-    "test:e2e": "jest -c jest-e2e.config.js"
+    "test:e2e": "jest -c jest-e2e.config.js --detectOpenHandles"
   },
   "jest": {
     "testEnvironment": "jsdom",
