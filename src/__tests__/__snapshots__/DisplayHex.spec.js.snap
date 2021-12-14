@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DisplayHex.js should display the DOM correctly 1`] = `
+<div
+  className="content"
+>
+  <div
+    className="control level"
+  >
+    <input
+      className="input level-item"
+      readOnly={true}
+      type="text"
+      value="#dede01"
+    />
+    <span
+      className="level-item px-2"
+    >
+      <div
+        style={
+          Object {
+            "backgroundColor": "#dede01",
+            "height": 35,
+            "width": 35,
+          }
+        }
+      />
+    </span>
+  </div>
+</div>
+`;
