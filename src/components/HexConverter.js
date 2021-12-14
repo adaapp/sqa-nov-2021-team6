@@ -23,9 +23,6 @@ const HexConverter = () => {
     Array.from(document.querySelectorAll("input")).forEach(
       input => (input.value = "")
     );
-    setRedColorValue("");
-    setGreenColorValue("");
-    setBlueColorValue("");
     setHexColor("#000000");
   };
 

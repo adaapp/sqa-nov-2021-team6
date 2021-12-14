@@ -9,8 +9,8 @@ const ColorInput = ({ color, setColor }) => {
   const verifyInput = (userInputValue) => {
 
     let parsedInputValue = (parseInt(userInputValue, 10));
-    if (parsedInputValue < 0 || parsedInputValue >= 255 || isNaN(parsedInputValue)) {
-      setErrorMessage("Please insert a number between 1 and 255");
+    if (parsedInputValue < 0 || parsedInputValue > 255 || isNaN(parsedInputValue)) {
+      setErrorMessage("Please insert a number between 0 and 255");
     } else {
       setColor(userInputValue);
       setErrorMessage("");
