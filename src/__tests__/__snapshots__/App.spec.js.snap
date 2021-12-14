@@ -53,7 +53,7 @@ exports[`App.js should display the DOM correctly 1`] = `
               >
                 <label
                   className="label"
-                  htmlFor="text"
+                  htmlFor="textRed"
                   style={
                     Object {
                       "color": "Red",
@@ -67,7 +67,7 @@ exports[`App.js should display the DOM correctly 1`] = `
                 >
                   <input
                     className="input level-item"
-                    id="text"
+                    id="textRed"
                     name="Red"
                     onChange={[Function]}
                     placeholder="e.g. 123"
@@ -110,7 +110,7 @@ exports[`App.js should display the DOM correctly 1`] = `
               >
                 <label
                   className="label"
-                  htmlFor="text"
+                  htmlFor="textGreen"
                   style={
                     Object {
                       "color": "Green",
@@ -124,7 +124,7 @@ exports[`App.js should display the DOM correctly 1`] = `
                 >
                   <input
                     className="input level-item"
-                    id="text"
+                    id="textGreen"
                     name="Green"
                     onChange={[Function]}
                     placeholder="e.g. 123"
@@ -167,7 +167,7 @@ exports[`App.js should display the DOM correctly 1`] = `
               >
                 <label
                   className="label"
-                  htmlFor="text"
+                  htmlFor="textBlue"
                   style={
                     Object {
                       "color": "Blue",
@@ -181,7 +181,7 @@ exports[`App.js should display the DOM correctly 1`] = `
                 >
                   <input
                     className="input level-item"
-                    id="text"
+                    id="textBlue"
                     name="Blue"
                     onChange={[Function]}
                     placeholder="e.g. 123"
@@ -266,6 +266,7 @@ exports[`App.js should display the DOM correctly 1`] = `
             >
               <input
                 className="input level-item"
+                data-testid="display-hex"
                 name="display-color"
                 readOnly={true}
                 type="text"

@@ -3,13 +3,15 @@ import ReactColorSquare from "react-color-square";
 import PropTypes from "prop-types";
 
 const ColorInput = ({ color, setColor }) => {
-
   const [errorMessage, setErrorMessage] = useState("");
 
   const verifyInput = (userInputValue) => {
-
-    const parsedInputValue = (parseInt(userInputValue, 10));
-    if (parsedInputValue < 0 || parsedInputValue > 255 || isNaN(parsedInputValue)) {
+    const parsedInputValue = parseInt(userInputValue, 10);
+    if (
+      parsedInputValue < 0 ||
+      parsedInputValue > 255 ||
+      isNaN(parsedInputValue)
+    ) {
       setErrorMessage("Please insert a number between 0 and 255");
       setColor(userInputValue);
     } else {
@@ -22,13 +24,17 @@ const ColorInput = ({ color, setColor }) => {
     <div>
       <form className="field py-4">
         <div className="control">
-          <label style={{color: color}} htmlFor="text" className="label">
+          <label
+            style={{ color: color }}
+            htmlFor={"text" + color}
+            className="label"
+          >
             {color}
           </label>
           <div className="level">
             <input
               name={color}
-              id="text"
+              id={"text" + color}
               className="input level-item"
               placeholder="e.g. 123"
               type="text"
@@ -40,7 +46,7 @@ const ColorInput = ({ color, setColor }) => {
           </div>
         </div>
       </form>
-      <div >
+      <div>
         <p className="has-text-danger">{errorMessage}</p>
       </div>
     </div>
@@ -49,7 +55,7 @@ const ColorInput = ({ color, setColor }) => {
 
 ColorInput.propTypes = {
   color: PropTypes.string,
-  setColor: PropTypes.func,
+  setColor: PropTypes.func
 };
 
 export default ColorInput;
