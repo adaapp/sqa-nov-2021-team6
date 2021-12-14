@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
+    "@babel/runtime": "^7.16.5",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "babel-jest": "^27.4.5",
     "bulma": "^0.9.3",
+    "jest": "^26.6.3",
+    "jest-dom": "^4.0.0",
+    "jest-puppeteer": "^6.0.3",
     "prettier": "^2.5.0",
     "puppeteer": "^13.0.0",
     "react": "^17.0.2",
@@ -14,6 +18,7 @@
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "react-test-renderer": "^17.0.2",
+    "start-server-and-test": "^1.14.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -21,9 +26,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "coverage": "npm run test -- --coverage ."
+    "coverage": "npm run test:e2e -- --coverage .",
+    "test:e2e": "jest -c jest-e2e.config.js"
   },
   "jest": {
+    "testEnvironment": "jsdom",
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
       "!src/reportWebVitals.js",
@@ -47,5 +54,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.16.5",
+    "@testing-library/jest-dom": "^5.16.1",
+    "babel-plugin-transform-runtime": "^6.23.0"
   }
 }
