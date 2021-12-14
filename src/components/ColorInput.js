@@ -40,7 +40,7 @@ const ColorInput = ({ color, setColor }) => {
         </div>
       </form>
       <div >
-        <p style={{ color: "red" }}>{errorMessage}</p>
+        <p className="has-text-danger">{errorMessage}</p>
       </div>
     </div>
   );
