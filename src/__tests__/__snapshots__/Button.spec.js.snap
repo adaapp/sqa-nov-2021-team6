@@ -6,6 +6,7 @@ exports[`Button.js should display the DOM correctly 1`] = `
 >
   <button
     className="button is-light"
+    name="Reset"
     onClick={[MockFunction]}
   >
     Reset

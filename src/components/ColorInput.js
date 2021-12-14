@@ -26,7 +26,7 @@ const ColorInput = ({ color, setColor }) => {
           </label>
           <div className="level">
             <input
-              name="color"
+              name={color}
               id="text"
               className="input level-item"
               placeholder="e.g. 123"
