@@ -121,7 +121,7 @@ To ensure better code quality and more thorough testing, we used test driven dev
 
 1. **Introduction**
 
-To make sure that our &#39;RGB to HEX converter&#39; works as expected and can be safely deployed to the end users, we planned a thorough testing of the application, with a combination of automated and manual tests. This test plan explains how the quality of the application will be verified and measured before the final release.
+To make sure that our &#39;RGB to HEX converter&#39; works as expected and can be safely deployed to the end users, we planned a thorough testing of the   application, with a combination of automated and manual tests. This test plan explains how the quality of the application will be verified and measured before the final release.
 
 2. **Quality objectives**
 
