@@ -3,24 +3,28 @@ import { render, fireEvent } from "@testing-library/react";
 import ColorInput from "../components/ColorInput";
 
 describe("ColourInput.js", () => {
-  it("should call the setColor function when user input changes", () => {
-    const setColor = jest.fn();
-    const { getByLabelText } = render(
-      <ColorInput color={"green"} setColor={setColor} />
+
+  it("should display the color value correctly in the input field", () => {
+    const { getByRole, getByLabelText } = render(
+      <ColorInput color={"green"} />
     );
 
     fireEvent.change(getByLabelText("green"), {
       target: { value: "255" }
     });
 
-    expect(setColor).toHaveBeenCalled();
+    expect(getByRole("textbox").value).toBe("255");
   });
 
-  it("should display the color value correctly in the input field", () => {
-    const { getByRole } = render(
-      <ColorInput color={"green"} rgbValue={"255"} />
+  it("displays error message when user enters invalid input", () => {
+    const { getByText, getByLabelText } = render(
+      <ColorInput color={"green"} />
     );
 
-    expect(getByRole("textbox").value).toBe("255");
+    fireEvent.change(getByLabelText("green"), {
+      target: { value: "color" }
+    });
+
+    expect(getByText("Please insert a number between 1 and 255")).toBeInTheDocument();
   });
 });
