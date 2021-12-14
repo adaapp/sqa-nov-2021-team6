@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className="container">
       <section className="section mt-6">
-        <h1 className="title">RGB to Hex Converter</h1>
+        <h1 className="title is-1">RGB to Hex Converter</h1>
         <h2 className="subtitle">
           A simple tool to convert <strong>RBG</strong> colours to{" "}
           <strong>Hex</strong> encoded colours.

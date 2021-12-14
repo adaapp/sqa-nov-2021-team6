@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(230, 219, 170);
+}
+
 .vertical-center {
   display: flex;
   justify-content: center;
