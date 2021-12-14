@@ -7,7 +7,7 @@ const Button = ({ type, text, action }) => {
   const buttonStyle = "button " + style[type];
   return (
     <p className="control">
-      <button className={buttonStyle} onClick={action}>
+      <button name={text} className={buttonStyle} onClick={action}>
         {text}
       </button>
     </p>
