@@ -1,6 +1,6 @@
 # SQA Team 6
 
-# Project description
+## Project description
 
 Our application is an online converter between RGB colour codes and HEX colour codes. It can be accessed on any web browser, users can submit RGB colour values in the provided text fields, click the &#39;Convert&#39; button and the HEX value will be immediately displayed on the screen. The HEX colour will also be displayed in the colour box, next to the value
 
@@ -14,7 +14,7 @@ Our application is an online converter between RGB colour codes and HEX colour c
 
 <img width="608" alt="Screenshot 2021-12-14 at 22 09 08" src="https://user-images.githubusercontent.com/48920813/146086427-ac28c8a5-ce1c-4fb9-9813-6dae15eed8f3.png">
 
-# Team roles
+## Team roles
 
 [Yulia Pichugina](mailto:yulia.pichugina@ada.ac.uk) - Project Manager/Scrum Master
 
@@ -25,13 +25,13 @@ Our application is an online converter between RGB colour codes and HEX colour c
 Team google meet link:
 https://meet.google.com/hzd-ccia-wgg
 
-# Ceremonies
+## Ceremonies
 
 - Initial planning/refinement meeting to set the project requirements and define the tasks.
 - Standups every 3 days to check the progress.
 - Team UAT at the end of the project to complete manual e2e testing.
 
-# Tools
+## Tools
 
 _Github_ - Source control, Project management, code hosting, CI pipeline
 
@@ -49,7 +49,7 @@ _Puppeteer_ - Automated UI testing library
 
 _Eslint/Prettier_ - Code formatter
 
-**Coding Best Practises**
+## Coding Best Practises
 
 1. Adhere to the React style guide: [https://react-styleguidist.js.org/](https://react-styleguidist.js.org/)
 2. Don&#39;t reinvent the wheel; there may already be an existing solution to the problem you are trying to solve.
@@ -67,7 +67,7 @@ _Eslint/Prettier_ - Code formatter
 14. Make sure the code is portable and buildable - your code should be able to function across platforms and frameworks. It must also be buildable - use an CI pipeline to check, build and test your code every time you make a commit.
 15. Version control is vital - it helps with collaboration, and allows you to restore previous versions of your software, if something goes wrong.
 
-# Pull Request Checklist
+## Pull Request Checklist
 
 1. Name the branch according to the team&#39;s convention.
 2. Check code for typos, comments, debugging code, trailing whitespaces etc.
@@ -80,7 +80,7 @@ _Eslint/Prettier_ - Code formatter
 9. Add a description to the PR explaining the purpose of the changes and any other relevant context.
 10. Reference all relevant tasks and user stories, so there is an audit trail for all changes.
 
-# Pull Request Review Rules
+## Pull Request Review Rules
 
 1. Does the code work? Check that functions and logic are correct.
 2. Are variables and functions appropriately named, to convey their purpose?
@@ -98,7 +98,7 @@ _Eslint/Prettier_ - Code formatter
 14. Are there any performance issues?
 15. Is the code readable and easy to understand?
 
-# Definition of Done
+## Definition of Done
 
 - Each story has been completed and tested.
 - All the items raised on the project board are moved to the &#39;Done&#39; column.
@@ -109,15 +109,15 @@ _Eslint/Prettier_ - Code formatter
 - Manual testing in a QA environment, to confirm that all functional and non-functional requirements have been met.
 - All quality objectives have been met.
 
-# CI/CD Pipeline setup
+## CI/CD Pipeline setup
 
 CI/CD pipeline was set up with GitHub Actions and is triggered every time a new PR is raised or new changes are pushed to the existing remote branch. It runs a number of checks, including code coverage (we set a target of \&gt;80% of code to be executed). Netlify build deploys branches previews.
 
-# Test Driven Development
+## Test Driven Development
 
 To ensure better code quality and more thorough testing, we used test driven development (TDD) when adding new features to the app. As shown in this PR [https://github.com/adaapp/sqa-nov-2021-team6/pull/36](https://github.com/adaapp/sqa-nov-2021-team6/pull/36) some tests for the new feature were added in the first commit. The next commit included the logic that implemented the required functionality and also fixed the tests. Only if all the tests passed and code coverage target was hit, the PR could be reviewed and merged.
 
-# Test Plan
+## Test Plan
 
 1. **Introduction**
 
