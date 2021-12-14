@@ -6,7 +6,7 @@ https://sharp-einstein-a3b13b.netlify.app/
 
 ## Project description
 
-Our application is an online converter between RGB colour codes and HEX colour codes. It can be accessed on any web browser, users can submit RGB colour values in the provided text fields, click the &#39;Convert&#39; button and the HEX value will be immediately displayed on the screen. The HEX colour will also be displayed in the colour box, next to the value
+Our application is an online converter between RGB colour codes and HEX colour codes. It can be accessed on any web browser, users can submit RGB colour values in the provided text fields, click the &#39;Convert&#39 button and the HEX value will be immediately displayed on the screen. The HEX colour will also be displayed in the colour box, next to the value
 
 **UI Design**
 
@@ -32,7 +32,7 @@ https://meet.google.com/hzd-ccia-wgg
 ## Ceremonies
 
 - Initial planning/refinement meeting to set the project requirements and define the tasks.
-- Standups every 3 days to check the progress.
+- Standup meetings every 3 days, to check on current progress.
 - Team UAT at the end of the project to complete manual e2e testing.
 
 ## Tools
@@ -52,10 +52,6 @@ _Jest_ - Unit testing framework
 _Puppeteer_ - Automated UI testing library
 
 _Eslint/Prettier_ - Code formatter
-
-## Project Management 
-
-Find our Github Project board here: https://github.com/adaapp/sqa-nov-2021-team6/projects/1
 
 ## Coding Best Practises
 
@@ -167,7 +163,7 @@ To ensure better code quality and more thorough testing, we used test driven dev
 
 1. **Introduction**
 
-To make sure that our &#39;RGB to HEX converter&#39; works as expected and can be safely deployed to the end users, we planned a thorough testing of the   application, with a combination of automated and manual tests. This test plan explains how the quality of the application will be verified and measured before the final release.
+To make sure that our &#39;RGB to HEX converter&#39; works as expected and can be safely deployed to the end users, we planned a thorough testing of the   application, using a combination of automated and manual tests. This test plan details how the quality of the application will be verified and measured before final release.
 
 2. **Quality objectives**
 
@@ -180,7 +176,7 @@ To make sure that our &#39;RGB to HEX converter&#39; works as expected and can b
 
 3. **Test strategy**
 
-Software quality will be checked with a combination of automated and manual tests. The first layer will be performed by automated tests running on a CI/CD pipeline, every time a change is made and merged into the codebase. This will help us to make sure that the code quality would not be affected by changes. Manual tests will also help to identify any bugs in the user experience.
+Software quality will be checked with a combination of automated and manual tests. The first layer of tests will be performed by an automated test suite, running on a CI/CD pipeline, each time a change is made and merged into the codebase. This will help us to ensure that the code quality is not adversely affected by changes, with manual tests also helping to identify any bugs in the user experience.
 
 ***3.1 Automated tests***
 
@@ -188,7 +184,7 @@ Software quality will be checked with a combination of automated and manual test
 - UI tests.
 - Snapshot tests.
 - Unit tests.
-- Automated UI testing, through the Puppeteer framework.
+- Automated end-to-end testing, using the Puppeteer framework.
 
 ***3.2 Manual tests***
 
